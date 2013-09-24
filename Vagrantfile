@@ -84,7 +84,8 @@ Vagrant.configure("2") do |config|
     chef.run_list = [
         "recipe[cookbook-lampdemo::default]",
 		"recipe[apt::default]",
-        "recipe[cookbook-lampdemo::apache]"
+        "recipe[cookbook-lampdemo::apache]",
+        "recipe[cookbook-lampdemo::php]",
     ]
   end
 end

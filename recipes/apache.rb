@@ -1,6 +1,7 @@
 # Activate modules (a2enmod) 
 include_recipe "apache2::default"
 include_recipe "apache2::mod_rewrite"
+include_recipe "apache2::mod_php5"
 
 node.set["apache"]["default_site_enabled"] = false
 
